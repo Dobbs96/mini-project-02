@@ -9,15 +9,17 @@
   }
 }
 html {
-  background-color: #fff;
-  color: #000;
+  background-color: rgb(160, 160, 160);
+  color: rgb(0, 0, 0);
   font-size: 16px;
   line-height: 1.6;
-  margin: 10px;
 }
 
 header {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.7rem 0;
 }
 
 header h1 {
@@ -25,13 +27,61 @@ header h1 {
 }
 
 header p {
+  text-align: center;
+  width: 80%;
+  margin-top: 0.67rem;
+  margin-bottom: 1rem;
 }
 
 main {
+  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-main h1 {
+.cheat-heading {
+  text-align: center;
+  position: relative;
+  top: -18px;
+  width: 85%;
+  margin: auto;
+  background: rgb(149, 255, 231);
+  background: radial-gradient(
+    circle,
+    rgba(149, 255, 231, 1) 0%,
+    rgba(255, 43, 43, 1) 100%
+  );
+  border-radius: 15px;
+}
+
+main h2 {
   font-size: 2rem;
+}
+
+.cheat {
+  border: crimson 2px dashed;
+  padding: 6px;
+  margin: 15px 0;
+}
+
+.inner-box {
+  margin: 6px;
+}
+
+pre.cheat-code {
+  background: rgb(149, 255, 231);
+  background: radial-gradient(
+    circle,
+    rgba(149, 255, 231, 1) 0%,
+    rgba(255, 43, 43, 1) 100%
+  );
+  border-radius: 15px;
+}
+
+footer {
+  background-color: black;
+  color: cornflowerblue;
+  text-align: center;
+  font-size: 1.2rem;
 }
