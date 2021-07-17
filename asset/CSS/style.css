@@ -1,16 +1,9 @@
 :root {
-  --inside-background {
-    background: rgb(149, 255, 231);
-    background: radial-gradient(
-      circle,
-      rgba(149, 255, 231, 1) 0%,
-      rgba(255, 43, 43, 1) 100%
-    );
-  }
+  --green: #149414;
 }
 html {
-  background-color: rgb(160, 160, 160);
-  color: rgb(0, 0, 0);
+  background-color: #000;
+  color: var(--green);
   font-size: 16px;
   line-height: 1.6;
 }
@@ -46,13 +39,9 @@ main {
   top: -18px;
   width: 85%;
   margin: auto;
-  background: rgb(149, 255, 231);
-  background: radial-gradient(
-    circle,
-    rgba(149, 255, 231, 1) 0%,
-    rgba(255, 43, 43, 1) 100%
-  );
+  background: radial-gradient(circle, #000 40%, var(--green) 150%);
   border-radius: 15px;
+  border: var(--green) solid 1px;
 }
 
 main h2 {
@@ -60,9 +49,9 @@ main h2 {
 }
 
 .cheat {
-  border: crimson 2px dashed;
+  border: var(--green) 2px dashed;
   padding: 6px;
-  margin: 15px 0;
+  margin: 15px;
 }
 
 .inner-box {
@@ -70,18 +59,16 @@ main h2 {
 }
 
 pre.cheat-code {
-  background: rgb(149, 255, 231);
-  background: radial-gradient(
-    circle,
-    rgba(149, 255, 231, 1) 0%,
-    rgba(255, 43, 43, 1) 100%
-  );
+  background: radial-gradient(circle, #000 40%, var(--green) 150%);
   border-radius: 15px;
+  margin-top: 7px;
+  padding-top: 7px;
+  border: var(--green) solid 1px;
 }
 
 footer {
-  background-color: black;
-  color: cornflowerblue;
+  background-color: #000;
+  color: var(--green);
   text-align: center;
   font-size: 1.2rem;
 }
