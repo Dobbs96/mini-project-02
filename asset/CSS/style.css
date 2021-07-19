@@ -46,12 +46,17 @@ main {
 
 main h2 {
   font-size: 2rem;
+  box-shadow: 0px 9px 45px 10px rgb(20 148 20 / 55%);
 }
 
 .cheat {
   border: var(--green) 2px dashed;
   padding: 6px;
   margin: 15px;
+}
+
+.cheat:hover {
+  box-shadow: 2px 2px 22px 14px rgba(20, 148, 20, 0.82);
 }
 
 .inner-box {
@@ -63,6 +68,7 @@ pre.cheat-code {
   border-radius: 15px;
   margin-top: 7px;
   padding-top: 7px;
+  padding-left: 13px;
   border: var(--green) solid 1px;
 }
 
